@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> Dopamemes </title>
+		<link rel="icon" type="image/png" href="../assets/images/common/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../assets/css/styles_main.css" />
+		<script src="../assets/js/jquery-1.10.2.js"></script>
+		<script src="../assets/js/jquery-ui.js"></script>
+		<script src='../assets/js/js_library.js'></script>
+		<script type='text/javascript' src="../assets/js/js_main.js" defer="defer"></script>   
+        <script type='text/javascript' src="../assets/js/knockout-2.2.1.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase-simple-login.js"></script>
+		<script src="../assets/js/console-image.js"></script>
+		<script src="../assets/js/angular.min.js"></script>
+		<script>
+			var db = new Firebase('https://flickering-fire-8139.firebaseio.com/');
+		</script>
+	<noscript>Please ensure JavaScript is enabled for best performance!</noscript>
+	</head>
+
+	<body>
+		<header>
+			<nav id="nav">
+				<a id="logo" href='library.html'><img id="img_logo" alt="" src="../assets/images/common/logo_small.png"></a>
+				<ul id="nav_ul_left">
+				   	<li class="nav_ul_li_left" id="active_li"><a class="nav_ul_a_left" href='library.html'>Home</a></li>
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../create/create.html'>Create a Meme</a></li>
+				   	<!--<li id="nav_upload_li" class="nav_ul_li_left"><a id="nav_upload_txt" class="nav_ul_li_left" href='#'> <input class="hidden" type="file" accept="image/*" capture="camera" id="file-upload" /><img id="nav_add_img" alt src="../assets/images/library/add.png"></a></li>-->
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../upload/upload.html'>Upload a Meme</a></li>
+				</ul>
+					<input type="submit" value="Logout" id="btn_logout"/>
+
+			</nav>	
+
+		</header>
+	
+		<div class="common_container" >
+		<div class="breadcrumbs"> <a class="a_breadcrumbs" href="library.html">Home </a></div>
+			<aside id="filterby_nav">
+					<h2 id="header_filterby">Filter By:</h2>
+
+					<hr class="hr_top">
+					<hr class="hr_bottom">
+					
+					<form>
+						<input id="albumSearch" name="AlbumFilter" placeholder="Albums..." class="albumfilter">
+						<div id="albumSearchAutoComplete" />
+					</form>
+					
+					<h1 class="sidebarheader" id="recentAlbumsHeader">Recent Albums:</h1>
+					
+					<hr class="hr_top">
+					<hr class="hr_bottom">
+					
+					<form>
+						<input id="tagSearch" name="TagsFilter" placeholder="Tags..." class="albumfilter">
+						<div id="tagSearchAutoComplete" />
+					</form>
+					
+					<h1 class="sidebarheader" id="recentTagsHeader">Recent Tags:</h1>			
+
+					<hr class="hr_top">
+					<hr class="hr_bottom">
+
+					<section class="rating_block">
+					<h2 class="rating_header">Rating:</h2>
+						<form>
+							<fieldset class="rating">
+								<input type="radio" id="s5" name="rating" value="5" class="starLabel" /><label for="s5" title="" ></label>
+								<input type="radio" id="s4" name="rating" value="4" class="starLabel" /><label for="s4" title="" ></label>
+								<input type="radio" id="s3" name="rating" value="3" class="starLabel" /><label for="s3" title="" ></label>
+								<input type="radio" id="s2" name="rating" value="2" class="starLabel" /><label for="s2" title="" ></label>
+								<input type="radio" id="s1" name="rating" value="1" class="starLabel" /><label for="s1" title="" ></label>
+							</fieldset>
+						</form>
+					</section>
+					<br><br>
+						<hr class="hr_top">
+					<hr class="hr_bottom">
+					<section id="sec_sub_time">
+				
+					<h2 class="sidebarheader">Submission Time:</h2>
+					
+				<a class="subtime_a" href="?TimeFilter=Hour" >Past Hour</a><br/>
+				<a class="subtime_a" href="?TimeFilter=Day">Past Day</a><br/>
+				<a class="subtime_a" href="?TimeFilter=Week">Past Week</a><br/>
+				<a class="subtime_a" href="?TimeFilter=Month">Past Month</a><br/>
+				<a class="subtime_a" href="?TimeFilter=Year">Past Year</a><br/>
+				</section>
+					<hr class="hr_top">
+					<hr class="hr_bottom">
+			</aside>
+
+				<div class="wrapper_gallery">
+
+				<form id="filter_div">
+					<select id="select_filter" name="filter" form="filter">
+					  <option value="recently_added">Recently Added</option>
+					  <option value="sort_by_name">Sort By Name</option>
+					  <option value="highest_rated">Highest Rated</option>
+					  <option value="lowest_rated">Lowest Rated</option>
+					</select>
+					Search Memes: <input type="search" name="tag_search" placeholder="Enter Meme Name"><br>
+				</form>
+					<div class="container_gallery wrapper_gallery">
+					<div id="galleryLocation"/>
+				</div>
+			</div>
+
+<div class="popout_layer" id="image_pop" >
+
+  <div class="popout_text">
+	
+	<button href="#close" title="Close" id="closepopup" class="close" onclick="closePopup()">X</button>
+
+	<div id="appendPopup" ></div> 
+
+	
+  </div>
+
+</div>
+
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

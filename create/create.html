@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> Dopamemes </title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/styles_main.css" />
+		<link rel="icon" type="image/png" href="../assets/images/common/favicon.png">
+		<script type='text/javascript' src="../assets/js/js_main.js" defer="defer"></script>   
+        <script type='text/javascript' src="../assets/js/knockout-2.2.1.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase-simple-login.js"></script>
+		<script src="../assets/js/console-image.js"></script>
+		<script src="../assets/js/jquery-2.1.1.min.js"></script>
+		<script src="../assets/js/angular.min.js"></script>
+		<script src="../assets/js/script.js"></script>
+		<noscript>Please ensure JavaScript is enabled for best performance!</noscript>
+	</head>
+
+	<body ng-app>
+		<header>
+			<nav id="nav">
+				<a id="logo" href='../library/library.html'><img id="img_logo" alt="" src="../assets/images/common/logo_small.png"></a>
+				<ul id="nav_ul_left">
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../library/library.html'>Home</a></li>
+				   	<li class="nav_ul_li_left" id="active_li"><a class="nav_ul_a_left" href='create.html'>Create a Meme</a></li>
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../upload/upload.html'>Upload a Meme</a></li>
+				</ul>
+
+					<input type="submit" value="Logout" id="btn_logout"/>
+			</nav>	
+		</header>
+
+<div class="common_container">
+<div class="breadcrumbs"> 
+				<a class="a_breadcrumbs" href="../library/library.html">Home </a> 
+				> 
+				<a class="a_breadcrumbs" href="create.html"> Create</a> 
+			</div>	
+
+<div id="memegencontainer" ng-controller="ctrl">
+
+
+    	<div class="preview-wrap span8"> 
+	    		<div class="canvas"></div> 
+	    </div>
+	
+    
+		<div id="editmemeshow" class="info span4">
+   		    <fieldset>
+    			<h2 id="headereditmeme">Edit Meme</h2>
+    			<h2 class="memeeditset">Select Template:</h2>
+    			<select class="memeeditset" id="meme-list" ng-model='selectedMeme' ng-change="alterMeme()"></select>
+    			<h2 class="memeeditset">Top Line:</h2>
+    			<input class="memeeditset" width="75px" type="text" id="toptext" ng-model='toptext' ng-change="alterMeme()" placeholder="top text"/>		 			
+    			<h2 class="memeeditset">Bottom Line:</h2>  
+    			<input class="memeeditset" type="text" id="bottomtext" ng-model='bottomtext' ng-change="alterMeme()" placeholder="bottom text"/>   	
+    			<button class="common_button editbuttons" id="saveBtn">Save to Library</button>
+    			<button class="common_button editbuttons" id="createBtn">Download</button>
+
+    		</fieldset>
+		</div>
+ 	<div id="savememeshow">
+    			<h2 id="headermemedetails">Meme Details</h2>
+
+			
+			<form id="memelineexport">
+		  <h2 class="header" id="header_tags"><span id="span_tags">Album to Save to:</span></h2>  
+
+       <textarea name="album_search" id="textarea_album_search" placeholder="Write the Name of the Album to Save to!"></textarea>
+<h2 class="create_rating_header">Rating:</h2>
+<fieldset class="rating" id="rating_id">
+			    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title=""></label>
+			    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title=""></label>
+			    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title=""></label>
+			    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title=""></label>
+			    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title=""></label>
+			</fieldset>
+			<br>			<br>
+
+<h2 class="header" id="header_comments"><span id="span_comments">Comments:</span></h2>  
+        <textarea name="comments" id="textarea_comments" placeholder="Enter some Comments..."></textarea>
+
+
+       <h2 class="header" id="header_tags"><span id="span_tags">Tags:</span></h2>  
+        <textarea name="tags" id="textarea_tags" placeholder="Enter some Tags (Delimit each tags with one space)"></textarea>
+                 <input class="button" id="memecreatesavebtn" type="submit" value="Save">
+
+               <!-- <input class="button" onclick="window.location.href='create.html'" id="memecreateagainbtn" type="submit" value="Create Another Meme">-->
+
+
+			</form>
+			</div>
+
+</div>
+ </div>
+
+</html>

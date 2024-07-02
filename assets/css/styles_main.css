@@ -1,0 +1,1180 @@
+
+/* -------------------------------Fonts------------------------------- */
+@font-face {
+  font-family: raleyway;
+  src: url(../fonts/raleway_reg.otf);
+}
+
+/* -------------------------------End of Fonts------------------------------- */
+
+
+/* -------------------------------Login------------------------------- */
+body {
+  color: white;
+  font-family: 'raleyway';
+  margin: 0;
+  background:#2F373D;
+}
+
+.login_container{
+  background: url(../images/login/login_back.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+
+input:focus{
+  background-color:yellow;
+}
+.login_form_box {
+  background: #1d5681; 
+  background: #26292E;
+  width: 390px;
+  height: 280px;
+  position: absolute;
+  top:-40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius:5px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+
+}
+.login_tab_links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  border-radius:5px 5px 0 0;
+
+}
+
+
+.login_tab_links li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.login_tab_links a {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 22px 12px 5px;
+  border-radius:5px 0 0 0;
+
+
+}
+
+.login_tab_links a:hover {
+
+  text-decoration: none;
+  color: #00FF00;
+
+
+}
+
+.form-action {
+  padding: 0 20px;
+  position: relative;
+}
+
+
+
+form input[type=text],
+form input[type=password] {
+  width: 95%;
+  height: 40px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.form-action .dark-box.bottom {
+  position: absolute;
+  right: 0;
+  bottom: -24px;
+}
+.login_tab_links + .dark-box.top {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+.login_button,#btn_logout,.common_button,#create,#memecreatesavebtn,#url,#memecreateagainbtn,#saveedits {
+    border: none;
+    display: block;
+    background: #136899;
+    height: 40px;
+    width: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    float:right;
+    outline:0;
+
+}
+
+.login_button:hover,#btn_logout:hover,.common_button:hover,#create:hover,#memecreatesavebtn:hover,#url:hover,#memecreateagainbtn:hover,#saveedits:hover {
+  background: #1e75aa;
+  border: none;
+
+}
+
+#saveedits{
+  margin-right: 10px;
+}
+
+.login_header{
+  font-size: 30px;
+  font-weight: 100;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.login_button:focus,  #btn_logout:focus, .common_button:focus, #create:focus, #memecreatesavebtn:focus, #url:focus, #memecreateagainbtn:focus, #saveedits:focus {
+
+    background: #136899;
+
+
+}
+
+/* ----------------------------End of Login--------------------------- */
+
+/* -------------------------------Nav--------------------------------- */
+
+nav {
+  min-width:960px; 
+
+width: 100%;
+height: 60px;
+background: #26292E;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+z-index: 1001;
+}
+
+
+#nav_ul_left, #nav_ul_right{
+  margin: 0;
+  margin-right: 20px;
+  list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    float:left;
+    margin-left: 10px;
+
+}
+
+
+
+.nav_ul_a_left,  .nav_ul_a_right{
+  /*border-right: 1px solid rgba(255,255,255,.8);*/
+  padding-right:15px;
+    padding-left: 15px;
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    font-family: "raleway_reg", arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    width:100px;
+    text-align: center;
+        vertical-align: middle;
+
+}
+
+.nav_ul_a_left{
+
+ vertical-align: middle;
+    display: table-cell;
+    height: 60px;
+}
+
+.nav_ul_a_left:hover{
+  background-color: #2F373D;
+  color:#fff;
+}
+
+.nav_ul_a_right{
+  padding:0;
+  margin-top: 20px;
+  width:80px;
+}
+
+#a_signin{
+border-right: 1px solid rgba(255,255,255,.8);
+}
+
+#nav_ul_right{
+  float:right;
+}
+
+.nav_ul_a_right:hover{
+  color:#fff;
+}
+
+/*logo size and position styles*/
+#img_logo{
+  float: left;
+  width:auto;
+  height:60px;
+  margin-left: 20px;
+    text-decoration:none;
+}
+
+img:hover {
+  background-color: #2F373D;
+
+}
+
+#btn_logout{
+  margin:10px 10px 0px 0px;
+}
+
+
+.showpopup{
+  background:none;
+  margin: 0;
+  border:none;
+}
+
+#active_li > a{
+  color:#fff;
+}
+/* ------------------------End of Nav--------------------------------- */
+
+/* ------------------------Common layout------------------------------ */
+
+.common_container{
+  width:960px;
+  margin: 0 auto;
+}
+
+input:focus
+{
+background-color:#FFF;
+}
+
+input[type="submit"] { outline: 0; }
+
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#010101;
+    border:none;
+    outline:none;
+    display: inline-block;
+    height: 20px;
+    cursor:pointer;
+}
+
+.breadcrumbs {
+margin-bottom: 10px;
+width: 400px;
+height: 20px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+.a_breadcrumbs {
+text-decoration: none;
+display: inline-block;
+font-family: "raleway_reg", arial;
+text-transform: uppercase;
+font-size: 12px;
+text-align: center;
+vertical-align: middle;
+color: #fff;
+}
+/* ---------------End of Common layout--------------------------------- */
+
+
+/* ----------------------------Create---------------------------------- */
+
+input {
+  width:250px;
+}
+
+#editmemeshow {
+  padding-bottom:10px;
+  border-color:#26292E;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    background-color: #26292E;
+
+}
+
+fieldset{
+  border:none;
+}
+.info {
+  text-align: center;
+  width:350px;
+  padding:10px;
+  float:right;
+}
+
+#memegencontainer{
+  padding: 10px;
+}
+
+.memeeditset{
+  margin-bottom: 10px;
+  text-align: left;
+  float:left;
+  margin-top: 5px;
+}
+
+
+.preview-wrap {
+  border-radius: 5px;
+  text-align: center;
+  margin:0 25px 25px 25px;
+  float:left;
+}
+
+
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.common_button{
+  margin-top:20px;
+}
+
+.editbuttons{
+  margin-left: 15px;
+}
+
+#savememeshow{
+    margin: 0px;
+    height: 550px;
+    width:350px;
+    float:right;
+      border-color:#26292E;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  padding:15px;
+      background-color: #26292E;
+
+}
+
+#textarea_bottom{
+    margin-bottom: 30px;
+}
+
+.create_rating_header{
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+#memecreatesavebtn{
+   float:right;
+}
+#memecreateagainbtn{
+   float:left;
+font-size: 14px;
+width:250px;}
+
+#createBtn{
+  float:left;
+  margin-left: 0px;
+}
+
+#textarea_top,#textarea_bottom,#textarea_comments,#textarea_tags{
+width:300px;
+height: 80px;
+max-width: 300px;
+max-height: 80px;
+font-size: 14px;
+}
+
+#textarea_comments,#textarea_tags{
+    margin-left: 10px;
+}
+
+
+#textarea_album_search{
+
+    width:300px;
+    max-width: 300px;
+    display: block;
+    float:left;
+    max-height: 20px;
+    margin-bottom: 10px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 100;
+    width:200px;
+
+}
+
+.button {
+margin-top: 40px;
+max-width: 180px;
+float:right;
+width: 180px;
+color: white;
+cursor: pointer;
+overflow: hidden;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+border: 1px solid #21262C;
+border-radius: 3px;
+padding: 10px;
+}
+
+
+
+
+
+.rating {
+    float:left;
+    border:none;
+    padding-left: 0;
+    padding-left: 5px;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '\2605';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+#headermemedetails{
+  margin-top: 0px;
+text-align: center;
+
+}
+
+#headereditmeme{
+  margin-top: 0px;
+}
+/* ----------------------------End of Create--------------------------- */
+
+/* ----------------------------Beg of Library--------------------------- */
+#filterby_nav{
+  width:150px;
+  height:500px;
+  background-color: #26292E;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  margin-right:0;
+    float:left;
+
+}
+
+#tag_form{
+  margin-left: 15px;
+}
+
+
+.albumfilter{
+  width:135px;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.albumList,.tagList{
+    margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 10px;
+}
+
+#tag_form{
+  display: none;
+}
+
+.albumList_li,.tagList_li{
+text-decoration: none;
+  list-style: none;
+}
+
+.tagList_li:before{
+   content: '';
+   height: 12px;
+   width: 12px;
+   background-repeat: no-repeat;
+   cursor:pointer;
+}
+
+
+.albumList_a,.tagList_a,.subtime_a{
+text-decoration: none;
+  list-style: none;
+  color:aqua;
+}
+
+.albumList_a:hover,.tagList_a:hover,.subtime_a:hover{
+  color:red;
+}
+
+.subtime_a{
+  margin-left: 10px;
+}
+#albums_nav_scroll{
+  overflow-y: scroll;
+  height:415px;
+  margin:0;
+  margin-top:5px;
+
+}
+
+#header_filterby{
+  text-align: center;
+  font-size:16px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.album_placer{
+  margin-left: 20px;
+  text-decoration: none;
+    color:#fff;
+
+}
+
+#albums_nav_bottom{
+  position:relative;
+  width:150px;
+  height:35px;
+  background-color: #26292E;
+  top: 50px;
+  overflow-y: scroll;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  float:left;
+}
+
+#button_add{
+  display:inline-block;
+  height:25px;
+  width:auto;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#button_download{
+  margin-top: 10px;
+  margin-right: 10px;
+  float:right;  
+  display:block;
+  height:25px;
+  width:auto;
+}
+
+
+
+
+#select_filter{
+  margin-right: 15px;
+  float:right;
+
+}
+
+#tag_form{
+  margin-left: 15px;
+}
+
+#filter_div{
+  background-color:#26292E; 
+  padding-bottom: 5px;
+}
+
+.album_name{
+  margin: 10px 0;
+  margin-left: 15px;
+  font-weight: 200;
+}
+
+
+
+.popout_layer:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+}
+.popout_layer:target:before {
+  display: block;
+
+}
+.popout_layer:target{
+  opacity: 1;
+
+}
+
+.popout_layer:target{
+  opacity: 1;
+
+}
+
+.header_popup{
+  font-weight:100;
+  font-size: 18px;
+  width:100px;
+  margin: 5px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+    margin-top: 0px;
+    color:#000;
+
+}
+
+.popout_text{
+  background: #eee;
+  border: #333333 solid 1px;
+  border-radius: 5px;
+  color:#000;
+  margin-left: -200px;
+  position: fixed;
+  left: 55%;
+  width: 260px;
+  height:580px;
+z-index: 999;
+  
+}
+
+#popimg{
+margin-left: 10px;
+}
+
+.close {
+  background: #000;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  left: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 16px;
+  box-shadow: 1px 1px 3px #000;
+  border:none;
+  z-index: 10;
+}
+
+.close:hover { background: #00d9ff; }
+
+#popup_date{
+  text-align: right;
+font-size: 12px;
+margin: 0;
+margin-right: 10px;
+}
+
+.popup_textarea{
+  margin:10px;
+  width:230px;
+  height:50px;
+  max-width:230px;
+  max-height:50px;
+  color:#000;
+}
+
+.popout_nav{
+    width:150px;
+  height:500px;
+  background-color: #eee;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  margin-right:0;
+  margin-top: 10px;
+    float:left;
+    z-index:11;
+      position: fixed;
+  left: 16%;
+    border: #333333 solid 1px;
+
+     border-radius: 5px;
+color:#000;
+
+}
+
+
+
+.popout_button {
+margin-top: 10px;
+margin-left: 5px;
+margin-bottom: 10px;
+width: 140px;
+color: white;
+background: green;
+cursor: pointer;
+overflow: hidden;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+border: 1px solid #21262C;
+border-radius: 3px;
+padding: 10px;
+}
+
+#create:hover {
+        background-color:blue;
+    box-shadow: inset 0 1px blue; 
+}
+
+.popup_button_del, .popup_button_dl{
+  margin-top: 230px;
+  width:35px;
+  height:auto;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.popup_button_dl{
+  float:right;
+}
+
+
+ .ui-menu-item{
+  position: relative;
+    color: black;
+  background-color:white;
+  cursor: pointer;
+}
+
+.ui-menu{
+  display: block;
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 2px;
+  color: black;
+  background-color:white;
+  cursor: pointer;
+
+}
+
+.ui-helper-hidden-accessible {
+  display:none;
+}
+
+.ui-menu .ui-menu-item:hover{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: ButtonText;
+}
+
+#image_pop
+{
+  display:none;
+}
+
+.hr_top { 
+  display: block; height: 1px;
+    border: 0; 
+    border-top: 1px solid #21262c;
+    margin:0 auto; 
+    padding: 0; 
+  margin-bottom: -1px;
+  width:80%;
+}
+
+.hr_bottom { 
+  display: block; 
+  height: 1px;
+    border: 0; 
+    border-top: 1px solid #495865;
+    margin:0 auto; 
+    padding: 0; 
+  margin-top: -1px;
+  width:80%;
+
+}
+
+.gallery_name{
+  margin: 10px 0;
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+.container_gallery{
+    overflow-y: scroll;
+      height:800px;
+}
+#galleryLocation{
+padding-left: 10px;
+}
+
+.wrapper_gallery{
+  width:790px;
+  margin-left: 10px;
+  float:right;
+  border-left: 4px solid #26292E;
+  border-top: 4px solid #26292E;
+  margin-bottom: 10px;
+}
+
+.meme{
+  margin-top: 10px;
+  margin-left: 0px;
+  height:240px;
+  margin-right: 0px;
+  width:240px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.imgoverlay{
+  position: relative;
+  width:238px;
+  height:238px;
+  bottom:243px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  opacity:0;
+  z-index: 3;
+  border: 1px dashed #111;
+}
+
+.imgoverlay:hover{
+  background-color: #f1f1f1;
+  z-index: 13;
+  opacity:.6;
+  cursor: pointer;
+}
+
+.showpopup{
+  width:250px;
+  height: 250px;
+}
+
+
+.section{
+  display:block;
+}
+
+.sidebarheader,h2.rating_header{
+  font-weight: 100;
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color:#fff;
+}
+
+.rating {
+    float:left;
+    border:none;
+    padding-left: 0;
+    padding-left: 5px;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '\2605';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.popout_button {
+margin-top: 10px;
+margin-left: 5px;
+width: 140px;
+color: white;
+background: green;
+cursor: pointer;
+overflow: hidden;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+border: 1px solid #21262C;
+border-radius: 3px;
+padding: 10px;
+}
+
+#create:hover {
+        background-color:blue;
+    box-shadow: inset 0 1px blue; 
+}
+
+
+#nav_add_img:hover .nav_add_panel{
+  display: none;
+  color: red;
+}
+
+
+#nav_add_img{
+height: 40px;
+width: auto;
+display: block;
+padding-left: 30px;
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 10px;
+}
+
+#file-upload {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  color: transparent;
+  display:none;
+  background:none;
+  border:none;
+  width:100px;
+padding-left:20px; 
+}
+/* -------------------------------End of Library------------------------------- */
+
+
+
+/* -------------------------------Beg of Upload------------------------------- */
+
+
+/* clearfix */
+.clearfix {
+  clear:both;
+}
+
+#wrapper{
+margin-top: 30px;
+}
+
+#wrapper hgroup{
+  text-align:center;
+  margin:10px 0 30px;
+}
+
+
+#upload{
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+}
+#droparea{
+  width:700px;
+  height:220px;
+  border:4px dashed #ccc;
+  border-radius:10px;
+  vertical-align:baseline;
+  margin:0 auto;
+  text-align:center;
+  text-shadow:1px 1px 0 #fff;
+  margin-top: 20px;
+}
+#droparea p{
+  margin:7px 0;
+  font-size:30px;
+}
+#droparea .dropareainner{
+  margin-top:35px;
+}
+#droparea .dropfiletext{
+  font-size:40px;
+  font-weight:100;
+}
+
+
+#droparea .uploadbtn{
+  border:1px solid #ccc;
+  background-color:#f4f4f4;
+  padding:2px 5px;
+  margin-bottom:5px;
+  border-radius:25px;
+  cursor:pointer;
+  color:#111;
+  width:150px;
+}
+#droparea .uploadbtn:hover{
+  border-color:#777;
+  color:#555;
+}
+#droparea.hover{
+  border-color:#777;
+  background-color:#26292E;
+}
+#err{
+  color:#DB0000;
+  padding-top:3px;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.message{
+  margin-bottom:35px;
+  margin-top:30px;
+  text-align:center;
+  text-shadow:1px 1px 0 #fff;
+  color:#777;
+}
+#result{
+  margin-top:30px;
+}
+#result .imageholder{
+  display:inline-block;
+  background:#26292E;
+  padding:10px;
+  margin:7px;
+  text-align:center;
+  position:relative;
+
+  
+  transition: transform 1s 0.5s ease-out;
+  -moz-transition: -moz-transform 1s 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 1s 0.5s ease-out;
+  -o-transition: -o-transform 1s 0.5s ease-out;
+}
+#result .imageholder figcaption{
+  width:200px;
+  word-wrap:break-word;
+}
+#result .imageholder figcaption span{
+  font-size:11px;
+  color:#777;
+}
+#result .imageholder img{
+  width:200px;
+  height:auto;
+}
+
+#header_memes{
+  text-align: center;
+}
+
+#result_container{
+  width:960px;
+  background:#26292E;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+}
+
+/* -------------------------------End of Upload------------------------------- */
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+		<meta charset="utf-8" />
+		<title> &lt;!DOC TYPE$&gt; </title>
+		<link rel="icon" type="image/png" href="../assets/images/common/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../assets/css/styles_main.css" />
+		<script src="../assets/js/jquery-2.1.1.min.js"></script>
+		<script src="../assets/js/jquery.tmpl.min.js"></script>
+		<script src="../assets/js/modernizr.custom.js"></script>
+		<script src="../assets/js/js_upload.js"></script>
+		<script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+		<script type='text/javascript' src="../assets/js/js_main.js" defer="defer"></script>   
+        <script type='text/javascript' src="../assets/js/knockout-2.2.1.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase.js"></script>
+        <script type='text/javascript' src="../assets/js/firebase-simple-login.js"></script>
+		<script src="../assets/js/console-image.js"></script>
+		<script src="../assets/js/angular.min.js"></script>
+		<noscript>Please ensure JavaScript is enabled for best performance&#33;</noscript>
+		<script id="imageTemplate" type="text/x-jquery-tmpl"> 
+		    <div class="imageholder">
+				<figure>
+					<img src="${filePath}" alt="${fileName}"/>
+				</figure>
+			</div>
+		</script>
+		</head>
+<body>
+	<header>
+			<nav id="nav">
+				<a id="logo" href='../library/library.html'><img id="img_logo" alt="" src="../assets/images/common/logo_small.png"></a>
+				<ul id="nav_ul_left">
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../library/library.html'>Home</a></li>
+				   	<li class="nav_ul_li_left"><a class="nav_ul_a_left" href='../create/create.html'>Create a Meme</a></li>
+				   	<li class="nav_ul_li_left" id="active_li"><a class="nav_ul_a_left" href='upload.html'>Upload a Meme</a></li>
+				</ul>
+
+					<input type="submit" value="Logout" id="btn_logout"/>
+			</nav>	
+		</header>
+
+<section class="common_container" id="wrapper">
+<div class="breadcrumbs"> 
+				<a class="a_breadcrumbs" href="../library/library.html">Home </a> 
+				> 
+				<a class="a_breadcrumbs" href="upload.html"> Upload</a> 
+			</div>	
+<div id="droparea">
+	<div class="dropareainner">
+		<p class="dropfiletext">Drag and Drop Memes Here</p>
+		<p>or</p>
+		<p><input id="uploadbtn" class="uploadbtn" type="button" value="Select Files"/></p>
+	
+		<p id="err">Wait there! You must ENABLE Javascript to have this works!</p>
+	</div>	
+	<input id="upload" type="file" multiple />
+</div>
+	<h2 id="header_memes">Memes Added to Library</h2>
+
+<div id="result_container">
+<div id="result">
+	
+</div>
+</div>
+</section>
+
+</body>
+</html>

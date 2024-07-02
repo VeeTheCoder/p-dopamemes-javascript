@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dopamemes</title>
+        	<script type='text/javascript' src="/assets/js/jquery-2.1.1.min.js"></script>
+			<script type='text/javascript' src="/assets/js/firebase.js"></script>
+			<script type='text/javascript' src="/assets/js/js_popup.js"></script>
+	        <link rel="stylesheet" type="text/css" href="/assets/css/styles_main.css"/>
+	        <script type='text/javascript' src="/assets/js/js_login.js" defer="defer"></script>            
+	        <script src="/assets/js/knockout-2.2.1.js"></script>
+	        <script src="/assets/js/firebase.js"></script>
+	        <script src="/assets/js/firebase-simple-login.js"></script>
+			<noscript>Please ensure JavaScript is enabled for best performance!</noscript>
+    </head>
+
+<body class="login_container">
+            <div class="login_form_box">
+                
+                <div id="login_tab" class="form-action show">
+                    <h1 class="login_header">Login</h1>
+            
+                    <form class="login_form">
+                            <input type="text" placeholder="Email" data-bind="value: loginVM.userName"/>
+                            <input type="password" placeholder="Password" data-bind="value: loginVM.userPassword"/>
+                            <input type="submit" value="Login" class="login_button" data-bind="click:loginVM.login"/>
+                    </form>
+                    <ul class="login_tab_links">
+                        <li>
+                            <a href="#register_tab">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div id="register_tab" class="form-action hide">
+                    <h1 class="login_header">Register</h1>
+                    
+                    <form  class="login_form">
+                        <input type="text" placeholder="Email" data-bind="value: signupVM.userName"/>
+                        <input type="password" placeholder="Password" data-bind="value: signupVM.userPassword"/>
+                        <input type="submit" value="Sign Up" class="login_button" data-bind="click:signupVM.signup"/>
+                    </form>
+                    <ul class="login_tab_links">
+                        <li>
+                            <a href="#login_tab" class="active">Back to Login</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+    </body>
+</html>
+
+
+
+
